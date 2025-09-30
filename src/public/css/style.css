@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+.hoidanit{
+    width: 500px;
+    margin: 20px;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;

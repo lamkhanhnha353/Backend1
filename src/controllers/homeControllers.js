@@ -6,13 +6,19 @@ const getHomepage = (req, res) =>{
     return res.render('home.ejs');
 }
 
-const pageHello =( req, res) => {
+const getPageHello =( req, res) => {
     res.send('<h1>Hello anh em hello anh oi</h1>');
 }
 
-const pageHoiDanIt = (req, res) =>{
+const getPageHoiDanIt = (req, res) =>{
     res.render('example.ejs');
 }
+
+const postCreateUser = (req, res)=> {
+    console.log('check req.body', req.body)
+    res.send('hello')
+}
 module.exports = {
-    getHomepage, pageHello, pageHoiDanIt
+    getHomepage, getPageHello, getPageHoiDanIt,
+    postCreateUser
 }

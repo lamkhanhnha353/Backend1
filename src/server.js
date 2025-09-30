@@ -6,6 +6,8 @@ const port = 3000
 const configViewEngine = require('./config/viewEngine');
 const routerWeb = require('./routes/web')
 
+app.use(express.json()) // for json
+app.use(express.urlencoded({ extended: true })) // for form data
 
 //config template engine
 configViewEngine(app);
