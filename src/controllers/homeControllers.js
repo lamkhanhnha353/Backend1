@@ -3,7 +3,7 @@
 const getHomepage = (req, res) =>{
     //process data
     //call model
-    res.send('Hello world');
+    return res.render('home.ejs');
 }
 
 const pageHello =( req, res) => {
